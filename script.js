@@ -23,4 +23,19 @@ function createHeart() {
   }, 6000);
 }
 
+document.addEventListener("click", (e) => {
+  const rose = document.createElement("div");
+  rose.classList.add("rose");
+  rose.innerText = "🌹";
+
+  rose.style.left = e.clientX + "px";
+  rose.style.top = e.clientY + "px";
+
+  document.body.appendChild(rose);
+
+  setTimeout(() => {
+    rose.remove();
+  }, 1000);
+});
+
 setInterval(createHeart, 200);
