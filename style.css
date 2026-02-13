@@ -28,7 +28,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .heart {
@@ -66,7 +66,7 @@ body {
   position: fixed;
   pointer-events: none;
   z-index: 3;
-  font-size: 20px;
+  font-size: 21px;
   margin: -10px;
   animation: click-rose 1s ease-out forwards;
 }

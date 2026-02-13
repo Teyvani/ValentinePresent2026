@@ -30,7 +30,6 @@ document.addEventListener("click", (e) => {
 
   rose.style.left = e.clientX + "px";
   rose.style.top = e.clientY + "px";
-
   document.body.appendChild(rose);
 
   setTimeout(() => {
