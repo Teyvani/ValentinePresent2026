@@ -1,0 +1,63 @@
+body {
+  background-color: #e587be;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.content {
+  top: 30vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+.content h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heart {
+  position: fixed;
+  top: -10vh;
+  width: 50px;
+  height: 40px;
+  opacity: 0.9;
+  z-index: 1;
+  animation-name: falling;
+  animation-timing-function: linear;
+}
+
+.heart::before,
+.heart::after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: var(--heart-color, red);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
